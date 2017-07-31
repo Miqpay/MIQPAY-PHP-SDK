@@ -17,8 +17,6 @@ require_once('../MiqPay.php');
 $miqPay = new MiqPay($publicKey,$secretKey);
 $response = $miqPay->api('initPayment', $params);
 
-print_r($response);
-
-/*if(!empty($response->result->payUrl)){
+if(!empty($response->result->payUrl)){
     header("Location: " . $response->result->payUrl);
-}*/
+}
