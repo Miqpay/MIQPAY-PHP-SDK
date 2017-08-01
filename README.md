@@ -8,14 +8,14 @@ Php sdk for [MiqPay ](https://miqpay.ru)
 header('Content-Type: text/html; charset=UTF-8');
 
 // Miqpay data
-$publicKey = '';
-$secretKey = '';
+$public_key = '';
+$secret_key = '';
 
 // Order params
 $params['amount'] = 1;
 $params['currency'] = 'RUB';
-$params['orderId'] = 1;
-$params['paymentType'] = 'app';
+$params['order_id'] = 1;
+$params['payment_type'] = 'app';
 $params['payment'] = 'ALL';
 
 require_once('../MiqPay.php');
