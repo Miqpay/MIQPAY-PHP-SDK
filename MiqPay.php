@@ -23,7 +23,7 @@ class MiqPay
     private $requiredMiqpayMethodsParams = array(
         'initPayment' => array('amount', 'currency', 'orderId', 'paymentType','payment'),
         'getPayment' => array('transactionId'),
-        'refundPayment' => array('transaction_id','refundAmount'),
+        'refundPayment' => array('transactionId','refundAmount'),
     );
 
     private $supported_miqpay_ip = array(
