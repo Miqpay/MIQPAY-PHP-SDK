@@ -20,7 +20,7 @@ $params['payment'] = 'ALL';
 
 require_once('../MiqPay.php');
 
-$miqPay = new MiqPay($publicKey,$secretKey);
+$miqPay = new MiqPay($public_key,$secret_key);
 $response = $miqPay->api('initPayment', $params);
 
 if(!empty($response->result->payUrl)){
