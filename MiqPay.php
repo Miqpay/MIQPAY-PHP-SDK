@@ -26,7 +26,7 @@ class MiqPay
         'refundPayment' => array('transactionId','refundAmount'),
     );
 
-    private $supported_miqpay_ip = array(
+    private $supportedMiqpayIp = array(
         '87.236.16.172',
         '127.0.0.1' // for debug
     );
